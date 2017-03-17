@@ -15,9 +15,10 @@ group :development, :test do
 end
 group :development do
   gem 'web-console'
-  gem 'listen', '~> 3.0.5'
+  #gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'mina-logs', require: false
 end
 
 # learn-rails
@@ -25,10 +26,12 @@ gem 'bootstrap-sass'
 gem 'gibbon'
 gem 'high_voltage'
 gem 'simple_form'
+gem 'sqlite3'
+gem 'listen', '~> 3.0.5'
 group :development do
   gem 'better_errors'
   gem 'rails_layout'
-  gem 'sqlite3'
+  #gem 'sqlite3'
 end
 group :production do
   gem 'pg'
